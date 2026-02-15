@@ -1,0 +1,40 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-15T10:32:03.461Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-18",
+        "summary": "Update the Fleet vehicle represented by the selected image element (/html/body/div/div/main/section[2]/div/div[5]/div[2]/div[2]/div[1]/img[1]) so it displays as “Toyota Coaster Saloon 4C” and uses a dedicated Saloon 4C image asset (instead of the current Coaster 4C image), by updating the corresponding entry in fleet data.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/public/assets/generated/car-coaster-saloon-4c.dim_1200x800.jpg",
+          "frontend/src/data/fleet.ts"
+        ],
+        "matchedFiles": [
+          "frontend/public/assets/generated/car-coaster-saloon-4c.dim_1200x800.jpg",
+          "frontend/src/data/fleet.ts"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/car-coaster-saloon-4c.dim_1200x800.jpg",
+    "frontend/src/data/fleet.ts",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

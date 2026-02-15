@@ -1,0 +1,52 @@
+{
+  "kind": "build_request",
+  "title": "Rename and update fleet image for Toyota Coaster Saloon 4C",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-18",
+      "text": "Update the Fleet vehicle represented by the selected image element (/html/body/div/div/main/section[2]/div/div[5]/div[2]/div[2]/div[1]/img[1]) so it displays as “Toyota Coaster Saloon 4C” and uses a dedicated Saloon 4C image asset (instead of the current Coaster 4C image), by updating the corresponding entry in fleet data.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "toyota coaster saloon 4C",
+          "/html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[5]/div[2]/div[2]/div[1]/img[1]"
+        ]
+      },
+      "acceptanceCriteria": [
+        "In the Fleet section under “Group & Commercial Transport”, the vehicle card currently showing “Toyota Coaster 4C” now shows the name exactly “Toyota Coaster Saloon 4C”.",
+        "The card image for this vehicle loads from a new static asset path under /assets/generated (and is not reusing /assets/generated/car-coaster-4c.dim_1200x800.jpg).",
+        "The <img> alt text for this card matches the updated vehicle name (via vehicle.name).",
+        "The booking form “Select Car” dropdown includes “Toyota Coaster Saloon 4C” (reflecting the updated fleet data)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Apply the change only to the vehicle corresponding to the selected Fleet card image element; do not alter other fleet vehicle cards.",
+    "Store any new image under frontend/public/assets/generated and reference it via a /assets/generated/... path (no backend image routing).",
+    "Do not edit any files under frontend/src/components/ui or other frontend immutablePaths."
+  ],
+  "nonGoals": [
+    "Do not add new vehicle types beyond updating the existing Coaster 4C entry to Saloon 4C.",
+    "Do not change site theme, layout, SEO copy, or backend booking logic as part of this change."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Premium minibus photo of a Toyota Coaster Saloon (front 3/4 angle), clean background, high contrast, realistic style (car-coaster-saloon-4c.dim_1200x800.jpg)"
+    ],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

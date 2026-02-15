@@ -1,0 +1,247 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 11,
+  "summary": "Build a premium, modern, mobile-friendly, fast-loading marketing website for the Pakistan-based car rental company “Islamabad Rent A Car and Tours / Islamabad Rent A Car”, featuring a luxury-themed homepage hero (faded collage limited to Prado, Land Cruiser, Audi, Revo, Civic), fleet listings organized into Luxury SUVs, Executive Sedans, Economy & Utility, and Group & Commercial Transport, a trust/benefits section, and a contact/booking section with provided contact details, Google Maps embed, booking form, and SEO keyword optimization.",
+  "architectural_notes": [
+    "Use a premium theme (either Black+Gold luxury or Royal Blue+White corporate) with modern font (Poppins or Montserrat).",
+    "Homepage structure includes: Hero with faded car-collage background + overlay text + two CTAs; Fleet grid by category; Why Choose Us icons; Contact/Booking with map + form.",
+    "Performance requirements: mobile-friendly and fast loading (optimize images and minimize heavy assets).",
+    "Hero collage scope updated: include only Prado, Land Cruiser, Audi, Toyota Revo, and Honda Civic; exclude all other car models from the hero background.",
+    "Fleet section categories should include: Luxury SUVs, Executive Sedans, Economy & Utility, and Group & Commercial Transport (for Grand Cabin + Coaster variants).",
+    "Why Choose Us items updated to 6: Wide Range from Luxury to Group Transport; Well-Maintained & Clean Vehicles; Professional Drivers Available; 24/7 Customer Support; Transparent & Competitive Pricing; On-Time Pickup & Drop Service.",
+    "Contact details to display: Phone/WhatsApp +92 300 5125009; Email eaglenesttourism@gmail.com; Location: I-8 Markaz, 2000 Plaza, Islamabad, Pakistan."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Premium minibus photo of a Toyota Coaster Saloon (front 3/4 angle), clean background, high contrast, realistic style (car-coaster-saloon-4c.dim_1200x800.jpg)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-marketing-website-for-islamabad-rent-a-car-and-tours-with-a-minimal-spacious-premium-layout-that-is-mobile-first-fast-loading-and-easy-to-navigate-implement-a-simple-top-navigation-that-scrolls-to-sections-home-fleet-why-choose-us-contact-booking",
+      "title": "Create a single-page marketing website for “Islamabad Rent A Car and Tours” with a minimal, spacious, premium layout that is mobile-first, fast-loading, and easy to navigate; implement a simple top navigation that scrolls to sections (Home, Fleet, Why Choose Us, Contact/Booking).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-consistent-premium-visual-theme-across-the-site-using-either-black-gold-luxury-or-royal-blue-white-premium-corporate-and-modern-typography-poppins-or-montserrat-keep-spacing-generous-and-components-visually-clean-and-high-end",
+      "title": "Apply a consistent premium visual theme across the site using either Black+Gold (luxury) or Royal Blue+White (premium corporate) and modern typography (Poppins or Montserrat); keep spacing generous and components visually clean and high-end.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-homepage-hero-section-with-a-full-width-faded-watermark-collage-background-featuring-the-specified-car-models-and-overlay-the-exact-headline-subheadline-and-two-cta-buttons-book-your-car-now-and-contact-us",
+      "title": "Implement the homepage Hero section with a full-width faded ‘watermark collage’ background featuring the specified car models, and overlay the exact headline/subheadline and two CTA buttons: “Book Your Car Now” and “Contact Us”.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-our-fleet-section-as-a-clean-scrollable-visually-balanced-categorized-grid-with-car-cards-for-all-specified-vehicles-grouped-into-luxury-suvs-executive-sedans-economy-family-each-car-card-must-include-a-high-quality-image-car-name-1-line-description-rental-availability-daily-weekly-monthly-and-a-book-now-button",
+      "title": "Create the “Our Fleet” section as a clean, scrollable, visually balanced categorized grid with car cards for all specified vehicles, grouped into: Luxury SUVs, Executive Sedans, Economy & Family. Each car card must include a high-quality image, car name, 1-line description, rental availability (Daily / Weekly / Monthly), and a “Book Now” button.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-why-choose-us-section-with-a-clean-icon-based-layout-containing-exactly-the-following-benefit-items-well-maintained-vehicles-professional-drivers-available-24-7-customer-support-affordable-transparent-pricing-on-time-delivery-pickup",
+      "title": "Add a “Why Choose Us” section with a clean icon-based layout containing exactly the following benefit items: Well-Maintained Vehicles, Professional Drivers Available, 24/7 Customer Support, Affordable & Transparent Pricing, On-Time Delivery & Pickup.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-contact-booking-section-displaying-the-provided-contact-information-embed-a-google-map-for-the-provided-location-using-an-iframe-embed-and-implement-a-simple-booking-form-with-fields-name-phone-number-car-selection-rental-duration-pickup-location-message-and-a-confirm-booking-submit-button",
+      "title": "Build the Contact/Booking section displaying the provided contact information, embed a Google Map for the provided location using an iframe embed, and implement a simple booking form with fields: Name, Phone Number, Car Selection, Rental Duration, Pickup Location, Message, and a “Confirm Booking” submit button.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-on-page-seo-basics-set-appropriate-page-title-meta-description-semantic-headings-h1-h2-and-include-the-provided-target-keywords-naturally-in-visible-page-content-ensure-open-graph-twitter-preview-metadata-is-present-for-sharing",
+      "title": "Add on-page SEO basics: set appropriate page title, meta description, semantic headings (H1/H2), and include the provided target keywords naturally in visible page content; ensure Open Graph/Twitter preview metadata is present for sharing.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-generated-static-image-assets-for-the-hero-collage-background-and-each-fleet-vehicle-image-store-them-under-frontend-public-assets-generated-and-wire-them-into-the-hero-and-fleet-sections-no-backend-image-routing",
+      "title": "Add generated static image assets for the hero collage background and each fleet vehicle image, store them under frontend/public/assets/generated, and wire them into the Hero and Fleet sections (no backend image routing).",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-following-additional-vehicles-to-the-fleet-data-so-they-appear-in-the-fleet-section-and-in-the-booking-form-car-selection-list-toyota-grand-cabin-coaster-4c-and-coaster-5c-each-new-vehicle-must-include-unique-id-english-name-a-1-line-english-description-category-assignment-availability-text-daily-weekly-monthly-and-a-static-image-path-under-assets-generated",
+      "title": "Add the following additional vehicles to the fleet data so they appear in the Fleet section and in the Booking form car selection list: Toyota Grand Cabin, Coaster 4C, and Coaster 5C. Each new vehicle must include: unique id, English name, a 1-line English description, category assignment, availability text (Daily / Weekly / Monthly), and a static image path under /assets/generated.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-homepage-hero-collage-background-image-so-it-visually-includes-only-these-cars-prado-land-cruiser-audi-toyota-revo-and-honda-civic-and-remove-all-other-cars-from-the-collage-keep-the-same-watermark-faded-premium-dark-tone-style",
+      "title": "Update the homepage hero collage background image so it visually includes only these cars: Prado, Land Cruiser, Audi, Toyota Revo, and Honda Civic, and remove all other cars from the collage. Keep the same watermark/faded, premium dark tone style.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-fleet-data-and-the-fleet-section-taxonomy-to-include-a-dedicated-group-commercial-transport-category-and-ensure-vehicle-grouping-matches-the-requested-categories-luxury-suvs-executive-sedans-economy-utility-and-group-commercial-transport",
+      "title": "Update fleet data and the Fleet section taxonomy to include a dedicated “Group & Commercial Transport” category, and ensure vehicle grouping matches the requested categories: Luxury SUVs, Executive Sedans, Economy & Utility, and Group & Commercial Transport.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-group-commercial-transport-vehicle-descriptions-to-explicitly-describe-them-as-ideal-for-corporate-groups-weddings-airport-transfers-and-tourism-groups-in-clear-english-1-line-per-vehicle",
+      "title": "Update the “Group & Commercial Transport” vehicle descriptions to explicitly describe them as ideal for corporate groups, weddings, airport transfers, and tourism groups (in clear English, 1-line per vehicle).",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-why-choose-us-section-to-show-exactly-these-6-benefit-items-titles-as-written-wide-range-from-luxury-to-group-transport-well-maintained-clean-vehicles-professional-drivers-available-24-7-customer-support-transparent-competitive-pricing-and-on-time-pickup-drop-service",
+      "title": "Update the “Why Choose Us” section to show exactly these 6 benefit items (titles as written): “Wide Range from Luxury to Group Transport”, “Well-Maintained & Clean Vehicles”, “Professional Drivers Available”, “24/7 Customer Support”, “Transparent & Competitive Pricing”, and “On-Time Pickup & Drop Service”.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-contact-section-s-google-maps-iframe-embed-so-it-accurately-reflects-the-provided-location-i-8-markaz-2000-plaza-islamabad-pakistan",
+      "title": "Update the Contact section’s Google Maps iframe embed so it accurately reflects the provided location: “I-8 Markaz, 2000 Plaza, Islamabad, Pakistan”.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-seo-content-to-include-the-additional-target-keywords-coaster-rental-islamabad-and-grand-cabin-rent-pakistan-in-on-page-visible-content-and-or-metadata-while-keeping-the-existing-premium-car-rental-positioning-and-avoiding-keyword-stuffing",
+      "title": "Update SEO content to include the additional target keywords “Coaster rental Islamabad” and “Grand Cabin rent Pakistan” in on-page visible content and/or metadata, while keeping the existing premium car rental positioning and avoiding keyword stuffing.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-fleet-vehicle-represented-by-the-selected-image-element-html-body-div-div-main-section-2-div-div-5-div-2-div-2-div-1-img-1-so-it-displays-as-toyota-coaster-saloon-4c-and-uses-a-dedicated-saloon-4c-image-asset-instead-of-the-current-coaster-4c-image-by-updating-the-corresponding-entry-in-fleet-data",
+      "title": "Update the Fleet vehicle represented by the selected image element (/html/body/div/div/main/section[2]/div/div[5]/div[2]/div[2]/div[1]/img[1]) so it displays as “Toyota Coaster Saloon 4C” and uses a dedicated Saloon 4C image asset (instead of the current Coaster 4C image), by updating the corresponding entry in fleet data.",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Design and implement homepage hero with full-width faded watermark collage of specified cars, overlay headline/subheadline, and primary CTAs (Book Your Car Now, Contact Us)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Create 'Our Fleet' section: categorized grid (Luxury SUVs, Executive Sedans, Economy & Family) with car cards including image, name, 1-line description, rental availability, and Book Now button",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add 'Why Choose Us' icon-based benefits section (well-maintained vehicles, drivers available, 24/7 support, transparent pricing, delivery/pickup)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Build Contact section with displayed contact details, Google Map integration, and a simple booking form (name, phone, car selection, duration, pickup location, message) with Confirm Booking CTA",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Apply premium visual system: Black+Gold OR Royal Blue+White theme, modern typography (Poppins or Montserrat), minimal spacious layout, luxury feel, simple navigation, mobile-first and performance-focused",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "SEO setup: optimize on-page content/metadata for target keywords provided (Islamabad car rental, luxury car rental Pakistan, Prado/Civic/Land Cruiser rentals, economy car rental Islamabad)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Implement backend persistence for booking submissions: add a Motoko API that accepts booking requests from the frontend and stores them in stable canister state with timestamp and a generated identifier; return a success response that the frontend can display after “Confirm Booking”.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Expand fleet listings to include additional vehicles: Toyota Grand Cabin and Coaster variants (4C, 5C), including corresponding car cards in the appropriate category",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Update homepage hero watermark/collage background to include only: Prado, Land Cruiser, Audi, Toyota Revo, and Honda Civic; remove other cars from hero background",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-16",
+      "summary": "Update Fleet section taxonomy to include a dedicated “Group & Commercial Transport” category (Grand Cabin, Coaster 4C, Coaster 5C) and add copy describing these vehicles as ideal for corporate groups, weddings, airport transfers, and tourism groups",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-17",
+      "summary": "Update “Why Choose Us” benefit list to the 6 specified items (Wide Range, Well-Maintained & Clean, Professional Drivers, 24/7 Support, Transparent & Competitive Pricing, On-Time Pickup & Drop Service)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-18",
+      "summary": "Update Contact section content to include Phone/WhatsApp +92 300 5125009, email eaglenesttourism@gmail.com, and location I-8 Markaz, 2000 Plaza, Islamabad, Pakistan (and ensure Google Maps embed matches this location)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-19",
+      "summary": "Expand SEO target keywords to include coaster/grand-cabin specific terms (Coaster rental Islamabad, Grand Cabin rent Pakistan) alongside existing Islamabad/luxury/Prado/Civic terms",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-20",
+      "summary": "Do not implement any code changes yet; first obtain clarification from the user about the exact \"one change\" they want (what to change, desired new text/behavior/visuals, and where on the site it applies: Hero, Fleet, Why Choose Us, Contact/Booking, Footer, SEO, or booking backend).",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-21",
+      "summary": "Update fleet/booking car list to include or rename the vehicle as “Toyota Coaster Saloon 4C” (ensure it appears in Group & Commercial Transport with correct card text)",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Islamabad Rent A Car and Tours",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

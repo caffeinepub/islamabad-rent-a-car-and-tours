@@ -1,0 +1,16 @@
+{
+  "frontend/index.html": "HTML entry point with enhanced SEO meta tags including \"Prado rental Islamabad\", \"Coaster rental Islamabad\", and \"Grand Cabin rent Pakistan\" keywords in title and meta descriptions, plus Poppins font import for the premium car rental website.",
+  "frontend/src/index.css": "Global styles with Black+Gold luxury theme using OKLCH color system, Poppins font family, smooth scrolling, and custom luxury shadow utilities.",
+  "frontend/tailwind.config.js": "Tailwind configuration with Poppins font, extended luxury shadow utilities, and OKLCH color token mappings for the premium theme.",
+  "frontend/src/App.tsx": "Main application component managing the single-page layout with hero, fleet, why-choose-us, and contact-booking sections, plus car selection state for booking flow.",
+  "frontend/src/components/TopNav.tsx": "Sticky navigation bar with smooth-scroll links to page sections, mobile menu, and responsive design with Black+Gold theme styling.",
+  "frontend/src/components/sections/HeroSection.tsx": "Full-width hero section with faded car collage background, headline \"Premium Car Rental in Islamabad\", subheadline, and two CTA buttons.",
+  "frontend/src/data/fleet.ts": "Fleet data structure defining all 16 vehicles organized into 4 categories (luxury, executive, economy, group) with the \"Toyota Coaster Saloon 4C\" vehicle entry updated to use the new name and dedicated image asset at /assets/generated/car-coaster-saloon-4c.dim_1200x800.jpg.",
+  "frontend/src/components/FleetCarCard.tsx": "Reusable vehicle card component displaying car image, name, description, availability, and \"Book Now\" button with hover effects.",
+  "frontend/src/components/sections/FleetSection.tsx": "Fleet showcase section rendering four categorized vehicle grids (Luxury SUVs, Executive Sedans, Economy & Utility, Group & Commercial Transport) with SEO-friendly copy naturally including \"Prado rental Islamabad\", \"Coaster rental Islamabad\", and \"Grand Cabin rent Pakistan\" keywords.",
+  "frontend/src/components/sections/WhyChooseUsSection.tsx": "Benefits section displaying exactly 6 icon-based cards with titles matching the requested wording: \"Wide Range from Luxury to Group Transport\", \"Well-Maintained & Clean Vehicles\", \"Professional Drivers Available\", \"24/7 Customer Support\", \"Transparent & Competitive Pricing\", and \"On-Time Pickup & Drop Service\".",
+  "frontend/src/components/sections/ContactBookingSection.tsx": "Combined contact information display with Google Maps embed showing I-8 Markaz, 2000 Plaza location and booking form with validation, success/error states, and car pre-selection support.",
+  "frontend/src/components/Footer.tsx": "Footer component with company info, quick links, contact details, copyright notice, and Caffeine.ai attribution with UTM tracking.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks file with placeholder for future booking queries (currently minimal as backend doesn't support retrieval).",
+  "frontend/src/hooks/useCreateBooking.ts": "Custom mutation hook for submitting booking requests to the backend, adapting form data to current backend interface with workaround for parameter mismatch."
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-15T10:32:03.458Z",
+  "summary": "REQ-18 cannot be fully verified from the provided (truncated) diff snippet. The diff does not show the specific Coaster 4C entry being renamed nor its image path being changed, and no new image asset file was added under the required public assets path.",
+  "missing_requirements": [
+    {
+      "id": "REQ-18",
+      "requirement": "Update the Fleet vehicle represented by the selected image element so it displays as “Toyota Coaster Saloon 4C” and uses a dedicated Saloon 4C image asset (instead of the current Coaster 4C image), by updating the corresponding entry in fleet data.",
+      "reason": "The only visible portion of `frontend/src/data/fleet.ts` is truncated before the Group & Commercial Transport entries where the Coaster 4C/Saloon 4C item would appear, so the required name/image update cannot be confirmed from evidence shown. Additionally, no new image file was added to the repo, so the required new static asset under `frontend/public/assets/generated` is not evidenced.",
+      "evidence": [
+        "frontend/src/data/fleet.ts (truncated)",
+        "<file-diff>: ADDED FILES: none"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Update claims (in summaries) about SEO meta tags, theme styling, and multiple component behaviors beyond the requested fleet-card rename/image swap.",
+      "reason": "The BuildRequest is narrowly scoped to renaming/updating the specific Coaster 4C fleet entry and its image asset. The modified `frontend-file-summaries.txt` and `project_state.json` include broad descriptions (SEO/theme/component features) that are not requested in REQ-18 and are not supported by the listed modified source files in this diff summary.",
+      "evidence": [
+        "frontend-file-summaries.txt",
+        "project_state.json"
+      ]
+    }
+  ],
+  "confidence": 0.48,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/data/fleet.ts",
+    "project_state.json"
+  ]
+}

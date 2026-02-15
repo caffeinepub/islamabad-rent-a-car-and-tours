@@ -1,2 +1,3 @@
-# islamabad-rent-a-car-and-tours
-Exported from Caffeine project: Islamabad Rent A Car and Tours
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

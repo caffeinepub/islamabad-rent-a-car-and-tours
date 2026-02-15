@@ -1,0 +1,29 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Rename Coaster 4C fleet entry to Toyota Coaster Saloon 4C and swap card image asset",
+  "requirements": [
+    {
+      "id": "REQ-18",
+      "summary": "Update the existing “Toyota Coaster 4C” fleet entry so the Group & Commercial Transport card and booking dropdown show “Toyota Coaster Saloon 4C” and the card uses a new dedicated Saloon 4C image asset.",
+      "acceptanceCriteria": [
+        "In the Fleet section under “Group & Commercial Transport”, the vehicle card currently showing “Toyota Coaster 4C” now shows the name exactly “Toyota Coaster Saloon 4C”.",
+        "The card image for this vehicle loads from a new static asset path under /assets/generated (and is not reusing /assets/generated/car-coaster-4c.dim_1200x800.jpg).",
+        "The <img> alt text for this card matches the updated vehicle name (via vehicle.name).",
+        "The booking form “Select Car” dropdown includes “Toyota Coaster Saloon 4C” (reflecting the updated fleet data)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/car-coaster-saloon-4c.dim_1200x800.jpg",
+          "operation": "create",
+          "description": "Add the new static generated image asset for the Toyota Coaster Saloon 4C (1200x800) per imageRequirements, so the fleet card can reference it via a /assets/generated/... path (no backend image routing)."
+        },
+        {
+          "path": "frontend/src/data/fleet.ts",
+          "operation": "modify",
+          "description": "Update only the existing group vehicle entry with id 'coaster-4c' to rename it to exactly “Toyota Coaster Saloon 4C” and change its image field to '/assets/generated/car-coaster-saloon-4c.dim_1200x800.jpg', ensuring no other fleet entries are altered and that the booking dropdown (which maps fleetData) reflects the updated name."
+        }
+      ]
+    }
+  ]
+}

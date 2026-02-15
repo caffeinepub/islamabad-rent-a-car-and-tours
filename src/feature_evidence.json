@@ -1,0 +1,23 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-fleet-vehicle-represented-by-the-selected-image-element-html-body-div-div-main-section-2-div-div-5-div-2-div-2-div-1-img-1-so-it-displays-as-toyota-coaster-saloon-4c-and-uses-a-dedicated-saloon-4c-image-asset-instead-of-the-current-coaster-4c-image-by-updating-the-corresponding-entry-in-fleet-data",
+      "featureTitle": "Update the Fleet vehicle represented by the selected image element (/html/body/div/div/main/section[2]/div/div[5]/div[2]/div[2]/div[1]/img[1]) so it displays as “Toyota Coaster Saloon 4C” and uses a dedicated Saloon 4C image asset (instead of the current Coaster 4C image), by updating the corresponding entry in fleet data.",
+      "files": [
+        "frontend/src/data/fleet.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-18"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
